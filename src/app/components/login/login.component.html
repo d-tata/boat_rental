@@ -1,0 +1,20 @@
+<link href="stylesheet" href="./login.component.css">
+<div class="container mt-5">
+
+  <div class="container mb-3">
+    <h2 class="mb-4">Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="mb-3">
+            <label for="email" class="signupForm">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" formControlName="email">
+        </div>
+      
+        <div class="mb-3" >
+            <label for="password" class="signupForm">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter a password" formControlName="password">
+        </div>
+        <button type="login" class="data-btn btn-success" [disabled]="loginForm.invalid">Login</button>
+      </form>
+  </div>
+</div>
+

@@ -1,0 +1,49 @@
+login.component.css
+
+/* Container styling */
+.container {
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff2f0; /* Light blue background resembling the sea */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Form label styling */
+.signupForm {
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+}
+
+/* Input field styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styling */
+.btn-success {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* 
+body {
+  height: 100%;
+} */

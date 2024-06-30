@@ -1,0 +1,28 @@
+<link href="stylesheet" href="./signup.component.css">
+
+<div class="container mt-5">
+    <h2 class="mb-4">Sign Up</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="register()">
+        <div class="mb-3">
+            <label for="signupForm" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" formControlName="name" >
+        </div>
+        <div class="mb-3">
+            <label for="surname">Lastname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Enter your Lastname" formControlName="surname">
+        </div>
+        <div class="mb-3">
+            <label for="phoneNumber" class="signupForm">PhoneNumber</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="Enter your PhoneNumber" formControlName="phoneNumber">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="signupForm">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" formControlName="email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="signupForm">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter a password" formControlName="password">
+        </div>
+        <button  type="register" class="data-btn btn-success">Register</button>
+    </form>
+</div>

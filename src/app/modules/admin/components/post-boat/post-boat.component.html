@@ -1,0 +1,40 @@
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow-lg">
+        <h2 class="text-center mb-4">Add new Boat</h2>
+        <form [formGroup]="postBoatForm" (ngSubmit)="postBoat()">
+            <div class="mb-3" >
+                <label for="imageInput" class="form-label">Image</label>
+                <input type="file" class="form-control" id="imageInput" formControlName="image" ngf-select="onFileSelect($files)" multiple>
+            </div>
+            <div class="mb-3" >
+                <label for="brandInput" class="form-label">Brand</label>
+                <input type="text" class="form-control" id="brandInput" placeholder="Enter brand" formControlName="brand">
+            </div>
+            <div class="mb-3" >
+                <label for="modelInput" class="form-label">Model</label>
+                <input type="text" class="form-control" id="modelInput" placeholder="Enter model" formControlName="model">
+            </div>
+            <div class="mb-3" >
+                <label for="yearInput" class="form-label">Year</label>
+                <input type="number" class="form-control" id="yearInput" placeholder="Enter year" formControlName="year">
+            </div>
+            <div class="mb-3" >
+                <label for="capacityInput" class="form-label">Capacity</label>
+                <input type="text" class="form-control" id="capacityInput" placeholder="Enter capacity" formControlName="capacity">
+            </div>
+            <div class="mb-3" >
+                <label for="priceInput" class="form-label">Price</label>
+                <input type="number" class="form-control" id="priceInput" placeholder="Enter price" formControlName="price">
+            </div>
+            <div class="mb-3" >
+                <label for="availabilityInput" class="form-label">Availability</label>
+                <select class="form-select" id="availabilityInput" formControlName="availability">
+                    <option value="true">Available</option>
+                    <option value="false">Out of stock</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Lets sail</button>
+        </form>
+    </div>
+</div>
